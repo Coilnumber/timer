@@ -1,0 +1,86 @@
+body, html {
+    background: rgba(2, 2, 2, 1) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    position: relative;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FF9500 ;
+}
+
+#countdown {
+    display: none;
+    font-size: 4rem;
+    color: dimgray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 6ch;
+    padding: 8px;
+    user-select: none;
+}
+.buttons {
+    position: absolute;
+    bottom: 30px; left: 50%; transform: translateX(-50%);
+}
+
+.buttons button {
+    background: transparent;
+    border: 1px ;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none; /* или свой стиль */
+    margin: 0 10px; /* небольшой отступ между кнопками */
+    cursor: pointer;
+}
+
+input#mins {
+    background: transparent;
+    border: none;
+    width: 80px;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 6ch;
+    padding: 8px;
+    color: dimgray;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#start {
+    background-color: rgba(9, 41, 17, 1);
+    color: rgba(66, 181, 96, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pause {
+    background-color: rgba(28, 28, 30, 1);
+    color: rgba(114, 114, 114, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pause:hover {
+    background-color: rgba(49, 49, 49, 1);
+}
+
+#start:hover {
+    background-color: rgba(9, 36, 16, 1);
+}

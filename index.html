@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vadim's Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="circle">
+    <form id="timer">
+        <input type="number" id="mins" placeholder="00:00">
+        <div class="buttons">
+            <button type="submit" id="start">Старт</button>
+            <button type="button" id="pause">Пауза</button>
+        </div>
+        <div id="countdown">
+            0:00:00
+        </div>
+    </form>
+    <audio id="alarm-sound" src="gong.mp3" preload="auto"></audio>
+    <script src="app.js"></script>
+</div>
